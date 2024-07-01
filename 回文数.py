@@ -1,9 +1,11 @@
-def isPalindrome( x: int) -> bool:
-    s = str(x)
-    l = len(s)
-    for i in range(0, int((l + 1) / 2)):
-        if s[i] != s[l - i - 1]:
-            return False
-    return True
-x=input("请输入一个数，我来判断它是不是回文数："+'\n')
-print(isPalindrome(x))
+x = 1222221
+if x > 0:
+    x_str = str(x)
+    x_list = list(str(x))
+    x_list.reverse()
+    y = ''.join(x_list)
+    y_int = eval(y)
+    if y_int-x == 0:
+        print('true')
+    else:
+        print('false')
